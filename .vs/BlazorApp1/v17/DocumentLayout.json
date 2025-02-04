@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RicardoGB\\Desktop\\ProgamWebI\\Nueva carpeta\\BlazorApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C1C4E4C-B308-483F-9761-45F4E5DD1F26}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ricardogb\\desktop\\progamwebi\\nueva carpeta\\blazorapp1\\blazorapp1\\supabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C1C4E4C-B308-483F-9761-45F4E5DD1F26}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\supabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C1C4E4C-B308-483F-9761-45F4E5DD1F26}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ricardogb\\desktop\\progamwebi\\nueva carpeta\\blazorapp1\\blazorapp1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C1C4E4C-B308-483F-9761-45F4E5DD1F26}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C1C4E4C-B308-483F-9761-45F4E5DD1F26}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\ricardogb\\desktop\\progamwebi\\nueva carpeta\\blazorapp1\\blazorapp1\\components\\pages\\vuelo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C1C4E4C-B308-483F-9761-45F4E5DD1F26}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\vuelo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SupabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\RicardoGB\\Desktop\\ProgamWebI\\Nueva carpeta\\BlazorApp1\\BlazorApp1\\SupabaseService.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\SupabaseService.cs",
+              "ToolTip": "C:\\Users\\RicardoGB\\Desktop\\ProgamWebI\\Nueva carpeta\\BlazorApp1\\BlazorApp1\\SupabaseService.cs",
+              "RelativeToolTip": "BlazorApp1\\SupabaseService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:42:27.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\RicardoGB\\Desktop\\ProgamWebI\\Nueva carpeta\\BlazorApp1\\BlazorApp1\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\RicardoGB\\Desktop\\ProgamWebI\\Nueva carpeta\\BlazorApp1\\BlazorApp1\\Components\\Pages\\Home.razor*",
+              "RelativeToolTip": "BlazorApp1\\Components\\Pages\\Home.razor*",
+              "ViewState": "AgIAABwCAAAAAAAAAAAUwJcBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-03T07:54:16.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vuelo.razor",
+              "DocumentMoniker": "C:\\Users\\RicardoGB\\Desktop\\ProgamWebI\\Nueva carpeta\\BlazorApp1\\BlazorApp1\\Components\\Pages\\Vuelo.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\Vuelo.razor",
+              "ToolTip": "C:\\Users\\RicardoGB\\Desktop\\ProgamWebI\\Nueva carpeta\\BlazorApp1\\BlazorApp1\\Components\\Pages\\Vuelo.razor",
+              "RelativeToolTip": "BlazorApp1\\Components\\Pages\\Vuelo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-03T07:57:10.635Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

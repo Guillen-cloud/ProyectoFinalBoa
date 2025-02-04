@@ -1,0 +1,66 @@
+﻿@page "/Factura"
+@rendermode InteractiveServer
+
+
+<div class="factura-container">
+    <div class="factura-header">
+        <h2>Nota de Factura</h2>
+        <p><strong>Número de Factura:</strong> FCT-20250203</p>
+        <p><strong>Fecha:</strong> 03/02/2025</p>
+    </div>
+
+    <div class="factura-datos">
+        <h3>Datos del Pasajero</h3>
+        <p><strong>Nombre:</strong> Juan Pérez</p>
+        <p><strong>Documento:</strong> 12345678</p>
+        <p><strong>Correo Electrónico:</strong> juan.perez@email.com</p>
+    </div>
+
+    <div class="factura-detalle">
+        <h3>Detalles del Vuelo</h3>
+        <p><strong>Aerolínea:</strong> Ejemplo Airlines</p>
+        <p><strong>Origen:</strong> Santa Cruz de la Sierra (VVI)</p>
+        <p><strong>Destino:</strong> Buenos Aires (EZE)</p>
+        <p><strong>Fecha de Salida:</strong> 10/02/2025</p>
+        <p><strong>Hora de Salida:</strong> 14:30</p>
+        <p><strong>Clase:</strong> Business</p>
+    </div>
+
+    <div class="factura-precio">
+        <h3>Resumen de Pago</h3>
+        <p><strong>Tarifa Base:</strong> $500</p>
+        <p><strong>Impuestos:</strong> $50</p>
+        <p><strong>Total a Pagar:</strong> <strong>$550</strong></p>
+    </div>
+</div>
+
+<style>
+    .factura-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        font-family: Arial, sans-serif;
+    }
+
+    .factura-header, .factura-datos, .factura-detalle, .factura-precio {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    h2, h3 {
+        color: #003366;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+
+    .factura-precio strong {
+        font-size: 1.2em;
+    }
+</style>
+

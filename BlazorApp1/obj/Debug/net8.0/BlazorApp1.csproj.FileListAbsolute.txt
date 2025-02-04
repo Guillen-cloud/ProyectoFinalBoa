@@ -1,0 +1,165 @@
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\JAIRO\source\repos\BlazorApp1\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\SCPC707.LABS\Desktop\BlazorApp1\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Adriana\Desktop\PROGWEB1\BlazorApp1\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\Adriana\Desktop\PROGWEB1\PROYECTOFINAL\BlazorApp1\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\appsettings.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.endpoints.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.staticwebassets.runtime.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.exe
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.deps.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.runtimeconfig.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.dll
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\bin\Debug\net8.0\BlazorApp1.pdb
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfoInputs.cache
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.AssemblyInfo.cs
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.csproj.CoreCompileInputs.cache
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\bundle\BlazorApp1.styles.css
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\projectbundle\BlazorApp1.bundle.scp.css
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.build.BlazorApp1.props
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp1.props
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazorApp1.props
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.dll
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\refint\BlazorApp1.dll
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
+C:\Users\RicardoGB\Desktop\ProgamWebI\Nueva carpeta\BlazorApp1\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll

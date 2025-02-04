@@ -1,0 +1,54 @@
+﻿/* Estilos existentes */
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+    .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white;
+    }
+
+.btn-white {
+    background-color: white;
+    color: #6c757d;
+}
+
+    .btn-white:hover {
+        background-color: #f8f9fa;
+        color: #6c757d;
+    }
+
+.slide-in-up {
+    animation: slideInUp 0.5s ease-out;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    padding-top: 20px;
+}
+
+/* Nuevos estilos para dropdown */
+.dropdown-menu {
+    top: 100% !important;
+    left: 0 !important;
+    margin-top: 0.5rem;
+    z-index: 1050;
+}
+
+.dropdown-toggle::after {
+    margin-left: 0.5rem;
+}
+
+

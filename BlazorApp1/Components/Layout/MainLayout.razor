@@ -1,0 +1,189 @@
+﻿@inherits LayoutComponentBase
+
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Logotipo_de_BoA.svg/618px-Logotipo_de_BoA.svg.png"
+                 alt="BoA Logo" class="logo" />
+        </a>
+    </div>
+    <div class="navbar-right">
+        <a href="https://elevate.boa.bo/Loyalty" class="navbar-link">Vuelos</a>
+        <a href="https://elevate.boa.bo/Loyalty" class="navbar-link">Elévate</a>
+        <a href="https://www.boa.bo/Centro-de-Ayuda" class="navbar-link">Centro de Ayuda</a>
+    </div>
+</div>
+
+<div class="page">
+    <main>
+        <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank" class="about-link">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+
+<style>
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con algo de transparencia */
+        backdrop-filter: blur(10px); /* Desenfoque de fondo */
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        position: fixed; /* Posición fija para mantenerse en la parte superior */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Asegura que esté por encima del contenido */
+    }
+
+    .navbar-left {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .navbar-right {
+        display: flex;
+        justify-content: flex-end;
+        flex: 2;
+    }
+
+    .logo {
+        width: 120px; /* Tamaño del logo más pequeño */
+        height: auto;
+        margin-right: 20px; /* Espacio entre el logo y los enlaces */
+    }
+
+    .navbar-link {
+        color: #003366;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+    }
+
+        .navbar-link:hover {
+            color: #ffcc00; /* Color al pasar el mouse */
+        }
+
+    .top-row a {
+        color: #003366;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: color 0.3s ease;
+    }
+
+        .top-row a:hover {
+            color: #ffcc00;
+        }
+
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .modal {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .close-button {
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .hero-image {
+        position: relative;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 600px; /* Tamaño máximo ajustado */
+        height: auto;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #003366;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .viajes-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .viajar, .mis-vuelos, .business {
+        text-align: left;
+        width: 30%;
+    }
+
+    h3 {
+        color: #003366;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        color: #003366;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>

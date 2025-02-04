@@ -1,0 +1,78 @@
+﻿@page "/supabase"
+@rendermode InteractiveServer
+@inject HttpClient Http
+
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px; gap: 30px; font-family: Arial, sans-serif; color: #2c3e50;">
+    <!-- Sección del ComboBox -->
+    <div style="width: 300px; padding: 20px; background-color: #ecf0f1; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+        <h3 style="text-align: center; color: #34495e;">Seleccione un avión</h3>
+        @if (aviones == null)
+        {
+            <p style="text-align: center; font-size: 16px; color: #e74c3c;">Cargando datos...</p>
+        }
+        else
+        {
+            <select id="aviones" @onchange="OnAvionChanged" style="margin-top: 10px; width: 100%; padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #bdc3c7;">
+                <option value="" disabled selected>-- Seleccione un avión --</option>
+                @foreach (var avion in aviones)
+                {
+                    <option value="@avion.id">@($"{avion.modelo}")</option>
+                }
+            </select>
+        }
+    </div>
+
+    <!-- Sección de los detalles del avión -->
+    <div style="flex-grow: 1; padding: 20px; background-color: #f7f9f9; border-radius: 10px; border: 2px solid #2c3e50; box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); min-width: 350px;">
+        <h3 style="text-align: center; color: #2c3e50;">Datos del avión seleccionado</h3>
+        @if (selectedAvion == null)
+        {
+            <p style="text-align: center; font-size: 16px; color: #7f8c8d;">No se ha seleccionado ningún avión.</p>
+        }
+        else
+        {
+            <ul style="list-style: none; padding: 0; font-size: 18px; line-height: 1.8; text-align: center;">
+                <li><strong>Modelo:</strong> <span style="color: #2980b9;">@selectedAvion.modelo</span></li>
+                <li><strong>Fabricante:</strong> <span style="color: #2980b9;">@selectedAvion.fabricante</span></li>
+                <li><strong>Capacidad:</strong> <span style="color: #2980b9;">@selectedAvion.capacidad pasajeros</span></li>
+                <li><strong>Matrícula:</strong> <span style="color: #2980b9;">@selectedAvion.matricula</span></li>
+            </ul>
+        }
+    </div>
+</div>
+
+@code {
+    private List<avion> aviones;
+    private avion selectedAvion;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Configuración de la API key y solicitud de datos
+        Http.DefaultRequestHeaders.Add("apikey", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBsendsdHFhc2NhdmF0empremNtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzg1NjI5MzYsImV4cCI6MjA1NDEzODkzNn0.shL8x2tihrEFxZqSJxseo7o8QJvHAIcfvRDB42XgMxE");
+        aviones = await Http.GetFromJsonAsync<List<avion>>("aviones");
+    }
+
+    private void OnAvionChanged(ChangeEventArgs e)
+    {
+        // Convertir el valor seleccionado del ComboBox a un entero
+        if (int.TryParse(e.Value?.ToString(), out int avionId))
+        {
+            // Buscar el avión seleccionado
+            selectedAvion = aviones.FirstOrDefault(a => a.id == avionId);
+        }
+        else
+        {
+            // Si no hay selección válida, limpiar los detalles
+            selectedAvion = null;
+        }
+    }
+
+    public class avion
+    {
+        public int id { get; set; }
+        public string modelo { get; set; }
+        public string fabricante { get; set; }
+        public int capacidad { get; set; }
+        public string matricula { get; set; }
+    }
+}

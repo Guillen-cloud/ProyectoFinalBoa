@@ -1,0 +1,220 @@
+﻿@page "/Vuelo"
+@inject NavigationManager NavigationManager
+@inject SupabaseService SupabaseService
+
+@code {
+    [Parameter] public string? origin { get; set; }
+    [Parameter] public string? destination { get; set; }
+    [Parameter] public string? departureDate { get; set; }
+    [Parameter] public string? returnDate { get; set; }
+
+    // protected override void OnInitialized()
+    // {
+    //     Console.WriteLine($"Origen recibido: {origin}");
+    //     Console.WriteLine($"Destino recibido: {destination}");
+    //     Console.WriteLine($"Fecha salida recibida: {departureDate}");
+    //     Console.WriteLine($"Fecha llegada recibida: {returnDate}");
+    // }
+}
+
+
+<style>
+    .flights-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .flight-card {
+        width: 1300px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        background: #fff;
+    }
+
+    .flight-header {
+        background-color: #f4f4f4;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .flight-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .flight-time {
+        text-align: center;
+    }
+
+        .flight-time .time {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .flight-time .location {
+            font-size: 14px;
+            color: #888;
+        }
+
+    .flight-icon {
+        text-align: center;
+        font-size: 12px;
+        color: #555;
+    }
+
+        .flight-icon .icon {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+    .flight-footer {
+        background-color: #f4f4f4;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between; /* Alinea el precio a la derecha */
+        align-items: center;
+    }
+
+        .flight-footer .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            margin: 0;
+        }
+
+        .flight-footer .type {
+            font-size: 14px;
+            color: #888;
+            margin-left: auto; /* Mueve el tipo de vuelo a la izquierda */
+        }
+</style>
+
+<h3>Vuelos Disponibles</h3>
+
+
+
+
+@if (Vuelos is null)
+{
+    <p>Cargando vuelos...</p>
+}
+else if (!Vuelos.Any())
+{
+    <p>No se encontraron vuelos disponibles.</p>
+}
+else
+{
+    <div class="flights-container">
+        @foreach (var vuelo in Vuelos)
+        {
+            <div class="flight-card">
+                <div class="flight-header">
+                    <p class="date">@vuelo.fecha_salida.ToString("ddd, dd MMM. yyyy")</p>
+                </div>
+                <div class="flight-body">
+                    <div class="flight-time">
+                        <p class="time">@vuelo.fecha_salida.ToString("HH:mm")</p>
+                        <p class="location">Hora de inicio</p>
+
+                    </div>
+
+                    <div class="flight-icon">
+                        <p class="type">@vuelo.tipo_vuelo</p>
+                        <span class="icon">✈</span>
+                        <p>@vuelo.tiempo_vuelo</p>
+                    </div>
+                    <div class="flight-time">
+                        <p class="time">@vuelo.fecha_llegada.ToString("HH:mm")</p>
+                        <p class="location">Hora de llegada</p>
+                    </div>
+                    <div class="flight-footer">
+                        <p class="price">Desde @vuelo.precio_vuelo.ToString("C")</p>
+                    </div>
+                </div>                
+                
+            </div>
+        }
+    </div>
+}
+
+@code {
+    // private List<SupabaseService.Viajes> Vuelos { get; set; } = new();
+
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     try
+    //     {
+    //         Vuelos = await SupabaseService.GetFlights();
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         Console.WriteLine($"Error al cargar los vuelos: {ex.Message}");
+    //     }
+    // }
+
+
+    
+
+    private List<SupabaseService.Viajes> Vuelos { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Obtener los parámetros de la URL manualmente
+            var uri = new Uri(NavigationManager.Uri);
+            var queryParams = System.Web.HttpUtility.ParseQueryString(uri.Query);
+
+            origin = queryParams["origin"];
+            destination = queryParams["destination"];
+            departureDate = queryParams["departureDate"];
+            returnDate = queryParams["returnDate"];
+
+            // Console.WriteLine($"📌 Origen recibido: {origin}");
+            // Console.WriteLine($"📌 Destino recibido: {destination}");
+            // Console.WriteLine($"📌 Fecha salida recibida: {departureDate}");
+            // Console.WriteLine($"📌 Fecha llegada recibida: {returnDate}");
+
+            if (!string.IsNullOrEmpty(origin) && !string.IsNullOrEmpty(destination) && !string.IsNullOrEmpty(departureDate))
+            {
+                var allFlights = await SupabaseService.GetFlights();
+
+                // Convertir las fechas
+                DateTime? departureDateParsed = DateTime.TryParse(departureDate, out var depDate) ? depDate : null;
+                DateTime? returnDateParsed = DateTime.TryParse(returnDate, out var retDate) ? retDate : null;
+
+                // Filtrar los vuelos
+                Vuelos = allFlights.Where(v =>
+                    (string.IsNullOrEmpty(origin) || v.origen == origin) &&
+                    (string.IsNullOrEmpty(destination) || v.destino == destination) &&
+                    (!departureDateParsed.HasValue || v.fecha_salida.Date == departureDateParsed.Value.Date) &&
+                    (!returnDateParsed.HasValue || v.fecha_llegada.Date == returnDateParsed.Value.Date)
+                ).ToList();
+
+                Console.WriteLine($"✅ {Vuelos.Count} vuelos encontrados.");
+            }
+            else
+            {
+                Console.WriteLine("⚠️ Parámetros incompletos, no se aplicará el filtro.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"⚠️ Error al cargar los vuelos: {ex.Message}");
+        }
+    }
+
+
+
+}

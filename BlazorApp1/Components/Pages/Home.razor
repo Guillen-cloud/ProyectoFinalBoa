@@ -1,0 +1,543 @@
+﻿@page "/"
+@namespace BlazorApp1.Pages
+@rendermode InteractiveServer
+@inject SupabaseService SupabaseService
+@inject NavigationManager NavigationManager
+
+
+<PageTitle>Reserva de Vuelo</PageTitle>
+<style>
+    body {
+        color: #003366;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .experiencia-section {
+        padding: 40px 0;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+
+        .experiencia-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+    .experiencia-images {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .main-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .side-images-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-row,
+    .bottom-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-image {
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .side-image {
+        width: 295px;
+        height: 295px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .main-image:hover, .side-image:hover {
+            transform: scale(1.1);
+        }
+
+    .experiencia-images a {
+        display: block;
+    }
+
+    .image-banner {
+        position: relative;
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .banner-message {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        transform: translate(0, -50%);
+        color: white;
+        background-color: #003366;
+        padding: 30px;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        line-height: 1.6;
+        max-width: 30%;
+    }
+
+    /* Estilo del botón Invertir */
+    .btn-invertir {
+        width: 40px; /* Reducir tamaño */
+        height: 40px;
+        border: 2px solid yellow; /* Borde amarillo */
+        background-color: #ffffff;
+        border-radius: 50%; /* Más redondo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: none;
+    }
+
+        /* Estilo para las flechas dentro del botón */
+        .btn-invertir i {
+            color: yellow; /* Color amarillo */
+            font-size: 16px; /* Reducir tamaño de las flechas */
+        }
+
+        /* Desactivar el cambio de color y tamaño al hacer hover o clic */
+        .btn-invertir:hover,
+        .btn-invertir:focus,
+        .btn-invertir:active {
+            border-color: yellow; /* Mantener el borde amarillo */
+            background-color: #ffffff;
+            box-shadow: none;
+            transform: none;
+        }
+
+    .small-text {
+        font-size: 1rem;
+    }
+
+    /* Estilos para los selectores (más pequeños y alineados en una fila) */
+    .travel-section {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Separación entre los elementos */
+    }
+
+        .travel-section select {
+            width: 180px; /* Reducir tamaño */
+            padding: 0.5rem;
+            font-size: 0.9rem; /* Hacer el texto más pequeño */
+            border-radius: 10px;
+            border: 1px solid #003366;
+        }
+
+        .travel-section .btn-invertir {
+            margin-top: 0; /* Asegura que el botón esté alineado verticalmente con los selectores */
+        }
+
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        .form-row .col-md-4, .form-row .col-md-2 {
+            flex: 1;
+            margin: 5px;
+        }
+
+        .form-row .col-auto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .travel-buttons {
+        position: relative; /* Necesario para usar absolute dentro de este contenedor */
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        right: -300px; /* Mueve el contenedor más a la derecha */
+    }
+
+    .travel-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: 1px solid #003366;
+        border-radius: 15px;
+        background-color: #d3d3d3; /* Color de fondo por defecto */
+        color: #003366;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .travel-button.round-trip {
+            background-color: #FFD700; /* Color amarillo para "Ida y Vuelta" */
+            color: #fff;
+        }
+
+        .travel-button.one-way {
+            background-color: #d3d3d3; /* Color gris para "Solo Ida" */
+            color: #003366;
+        }
+
+        .travel-button.active {
+            background-color: #FFD700; /* Color amarillo cuando está activo */
+            color: #fff;
+        }
+
+        .travel-button.inactive {
+            background-color: #d3d3d3; /* Color gris cuando no está activo */
+            color: #003366;
+        }
+
+        .travel-button:hover {
+            opacity: 0.8;
+        }
+
+    .dropdown-menu {
+        border-radius: 10px; /* Borde redondeado para el dropdown */
+    }
+
+    .dropdown-toggle {
+        border-radius: 10px; /* Borde redondeado para el botón de pasajeros */
+    }
+
+    /* Bordes redondeados para las cajas de fecha */
+    input[type="date"] {
+        border-radius: 15px;
+        border: 1px solid #003366;
+        padding: 0.5rem;
+
+</style>
+
+<!-- Imagen Superior -->
+<div class="image-banner">
+    <img src="https://cdnboa-aab8augderd2cff4.a02.azurefd.net/images/69f6975a-897c-4712-b758-b4e4e9f12fe5.jpg"
+         alt="Banner de Reserva" class="img-fluid" style="width: 100%; max-height: 400px; object-fit: cover;" />
+    <div class="banner-message">
+        ¡Haz tus sueños realidad!<br>
+        <span class="small-text">Descubre nuevas emociones en cada uno de nuestros destinos</span>
+    </div>
+</div>
+
+<!-- Botoness -->
+<div class="bg-light py-2 mt-2">
+    <div class="container d-flex justify-content-center" style="gap: 1rem;">
+        <button class="btn @((showReservation ? "btn-white text-dark" : "btn-outline-secondary")) w-50"
+                @onclick="() => SelectSection(true)">
+            Reserva
+        </button>
+        <button class="btn @((!showReservation ? "btn-white text-dark" : "btn-outline-secondary")) w-50"
+                @onclick="() => SelectSection(false)">
+            Iniciar Check-in
+        </button>
+    </div>
+</div>
+
+<!-- Viaje -->
+<div class="travel-buttons">
+    <button class="travel-button @((isRoundTrip ? "active" : "inactive") + " round-trip")"
+            @onclick="() => SetTripType(true)">
+        Ida y Vuelta
+    </button>
+    <button class="travel-button @((!isRoundTrip ? "active" : "inactive") + " one-way")"
+            @onclick="() => SetTripType(false)">
+        Solo Ida
+    </button>
+</div>
+
+<!-- Reserva -->
+<section id="dynamic-content" class="py-4 mt-0">
+    @if (showReservation)
+    {
+        <div class="container mt-3 slide-in-up">
+            <div class="card" style="border-radius: 15px; overflow: visible; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+
+                <div class="card-body">
+                    <form onsubmit="SearchFlights">
+
+                    <!-- botones de Origen, Destino, Fecha Ini y Fin, pasajeros-->
+                        <div class="form-row">
+                            <div class="travel-section">
+                                <!-- Origen -->
+                                <div class="col-md-4">
+                                    <label for="origin"></label>
+                                    <select id="origin" class="form-control form-control-sm" @bind="Origin" required>
+                                        <option value="">Origen</option>
+                                        @foreach (var city in cities)
+                                        {
+                                            <option value="@city">@city</option>
+                                        }
+                                    </select>
+                                </div>
+
+                                <!-- Botón de Intercambio -->
+                                <div class="col-auto d-flex align-items-center">
+                                    <button type="button" class="btn btn-light btn-invertir" @onclick="SwapOriginDestination">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Destino -->
+                                <div class="col-md-4">
+                                    <label for="destination"></label>
+                                    <select id="destination" class="form-control form-control-sm" @bind="Destination" required>
+                                        <option value="">Destino</option>
+                                        @foreach (var city in cities)
+                                        {
+                                            <option value="@city">@city</option>
+                                        }
+                                    </select>
+                                </div>
+
+                                <!-- Fechas -->
+                                <div class="col-md-2">
+                                    <label for="departureDate">Salida</label>
+                                    <input id="departureDate" type="date" @bind="DepartureDate"
+                                           class="form-control form-control-sm" required style="width: 100%;" />
+                                </div>
+                                @if (isRoundTrip)
+                                {
+                                    <div class="col-md-2">
+                                        <label for="returnDate">Regreso</label>
+                                        <input id="returnDate" type="date" @bind="ReturnDate"
+                                               class="form-control form-control-sm" style="width: 100%;" />
+                                    </div>
+                                }
+                            </div>
+
+                            <!-- Pasajeros, debajo del resto -->
+
+
+
+                            <div class="col-md-2">
+                                <label for="dropdownPassengers">Cantidad de Pasajeros</label>
+                                <div class="dropdown">
+                                    <button class="form-control form-control-sm dropdown-toggle" type="button"
+                                            id="dropdownPassengers" data-bs-toggle="dropdown" aria-expanded="false">
+                                        @if (AdultCount > 0)
+                                        {
+                                            <span>Adultos: @AdultCount</span>
+                                        }
+                                        @if (ChildCount > 0)
+                                        {
+                                            <span>, Niños: @ChildCount</span>
+                                        }
+                                        @if (InfantCount > 0)
+                                        {
+                                            <span>, Bebés: @InfantCount</span>
+                                        }
+                                        @if (AdultCount == 0 && ChildCount == 0 && InfantCount == 0)
+                                        {
+                                            <span>Seleccionar Pasajeros</span>
+                                        }
+                                    </button>
+
+                                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownPassengers">
+                                        <li class="px-3 py-2">
+                                            <div class="d-flex align-items-center">
+                                                <label class="me-auto">Adultos</label>
+                                                <input type="number" class="form-control form-control-sm"
+                                                       @bind="AdultCount" min="1" max="9"
+                                                       style="width: 60px;" @oninput="ValidatePassengerCounts" />
+                                            </div>
+                                        </li>
+                                        <li class="px-3 py-2">
+                                            <div class="d-flex align-items-center">
+                                                <label class="me-auto">Niños</label>
+                                                <input type="number" class="form-control form-control-sm"
+                                                       @bind="ChildCount" min="0" max="@Math.Min(8 * AdultCount, 9 - AdultCount)"
+                                                       style="width: 60px;" @oninput="ValidatePassengerCounts" />
+                                            </div>
+                                        </li>
+                                        <li class="px-3 py-2">
+                                            <div class="d-flex align-items-center">
+                                                <label class="me-auto">Bebés</label>
+                                                <input type="number" class="form-control form-control-sm"
+                                                       @bind="InfantCount" min="0" max="@AdultCount"
+                                                       style="width: 60px;" @oninput="ValidatePassengerCounts" />
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--solo por ahora, sino quitar  -->
+
+
+
+
+
+
+
+                        <!-- Botón Buscar vuelo -->
+                        <div class="text-center mt-3">
+                            <!-- Cambia el evento para navegar solo si los datos son válidos -->
+                            <button type="button" class="btn btn-primary btn-lg" @onclick="mostrarvuelo" disabled="@IsSubmitButtonDisabled">
+                                Buscar vuelo
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="container mt-3 slide-in-up">
+            <h2>Iniciar Check-in</h2>
+            <p>Hola Mundo</p>
+        </div>
+    }
+</section>
+
+<!-- Sección de Experiencia -->
+<section class="experiencia-section">
+    <h2>Antes de empezar tu viaje</h2>
+    <p>Explora lo que te espera en tu viaje con algunas imágenes de experiencias previas.</p>
+    <div class="experiencia-images">
+        <div class="main-image-container">
+            <a href="pagina1.html">
+                <img src="imagen1.png" alt="Imagen Principal" class="main-image" />
+            </a>
+        </div>
+        <div class="side-images-container">
+            <div class="top-row">
+                <a href="pagina2.html">
+                    <img src="imagen2.png" alt="Imagen 1" class="side-image" />
+                </a>
+                <a href="pagina3.html">
+                    <img src="imagen3.png" alt="Imagen 2" class="side-image" />
+                </a>
+            </div>
+            <div class="bottom-row">
+                <a href="pagina4.html">
+                    <img src="imagen4.png" alt="Imagen 3" class="side-image" />
+                </a>
+                <a href="pagina5.html">
+                    <img src="imagen5.png" alt="Imagen 4" class="side-image" />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-4">
+    <div class="container">
+       
+        <div class="social-icons">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+@code {
+    private bool showReservation = true;
+
+    private bool isRoundTrip = true;
+    private string Origin { get; set; } = string.Empty;
+    private string Destination { get; set; } = string.Empty;
+    private DateTime? DepartureDate { get; set; }
+    private DateTime? ReturnDate { get; set; }
+    private int AdultCount { get; set; } = 1;
+    private int ChildCount { get; set; } = 0;
+    private int InfantCount { get; set; } = 0;
+
+    private void SetTripType(bool roundTrip)
+    {
+        isRoundTrip = roundTrip;
+
+        // Borrar los datos seleccionados
+        Origin = null;
+        Destination = null;
+        DepartureDate = null;
+        ReturnDate = null;
+
+        StateHasChanged(); // Forzar el renderizado del componente
+    }
+    private List<string> cities = new()
+    {
+        "Santa Cruz", "La Paz"
+    };
+
+    private void SelectSection(bool showReservationSection)
+    {
+        showReservation = showReservationSection;
+    }
+
+    private void SwapOriginDestination()
+    {
+        var temp = Origin;
+        Origin = Destination;
+        Destination = temp;
+    }
+
+
+    private void ValidatePassengerCounts()
+    {
+        // Implementar validación de pasajeros
+    }
+    private List<string> modelo = new();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        cities = await SupabaseService.GetCities();
+    }
+    private void mostrarvuelo()
+    {
+        if (!string.IsNullOrEmpty(Origin) && !string.IsNullOrEmpty(Destination) && DepartureDate.HasValue)
+        {
+            var url = $"/Vuelo?origin={Uri.EscapeDataString(Origin)}&destination={Uri.EscapeDataString(Destination)}&departureDate={DepartureDate?.ToString("yyyy-MM-dd")}";
+
+            if (ReturnDate.HasValue)
+            {
+                url += $"&returnDate={ReturnDate?.ToString("yyyy-MM-dd")}";
+            }
+
+            Console.WriteLine("Navegando a: " + url); // Para debug
+            NavigationManager.NavigateTo(url);
+        }
+        else
+        {
+            Console.WriteLine("Faltan datos para buscar vuelos");
+        }
+    }
+
+
+    private bool IsSubmitButtonDisabled
+    {
+        get
+        {
+            // Verifica si hay campos vacíos
+            return string.IsNullOrEmpty(Origin) || string.IsNullOrEmpty(Destination) || DepartureDate == null ||
+                   (isRoundTrip && ReturnDate == null);
+        }
+    }
+
+
+}
